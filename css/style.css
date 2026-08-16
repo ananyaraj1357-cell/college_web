@@ -2662,4 +2662,249 @@ footer {
 #successMessage {
     margin-top: 15px;
     font-weight: bold;
+
+}
+
+/* =========================================
+   PRIZES SECTION
+========================================= */
+
+.prizes-section {
+
+    padding: 90px 7%;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            180deg,
+            #020617,
+            #03091c
+        );
+
+    border-top:
+        1px solid
+        rgba(99, 102, 241, 0.15);
+}
+
+
+.prize-cards {
+
+    max-width: 1100px;
+
+    margin: 50px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.prize-card {
+
+    padding: 35px 25px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 23, 42, 0.95),
+            rgba(2, 6, 23, 0.9)
+        );
+
+    border:
+        1px solid
+        rgba(99, 102, 241, 0.3);
+
+    border-radius: 18px;
+
+    transition: 0.4s;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.prize-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #06b6d4,
+            #d946ef,
+            transparent
+        );
+}
+
+
+.prize-card:hover {
+
+    transform:
+        translateY(-10px);
+
+    border-color:
+        #22d3ee;
+
+    box-shadow:
+        0 0 30px
+        rgba(34, 211, 238, 0.2);
+}
+
+
+.prize-icon {
+
+    font-size: 50px;
+
+    margin-bottom: 20px;
+}
+
+
+.prize-card h3 {
+
+    color: #f8fafc;
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+}
+
+
+.prize-amount {
+
+    color: #22d3ee;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+
+.prize-card p:last-child {
+
+    color: #94a3b8;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   PARTICIPANTS SECTION
+========================================= */
+
+.participants-section {
+
+    padding: 90px 7%;
+
+    text-align: center;
+
+    background: #020617;
+
+    border-top:
+        1px solid
+        rgba(99, 102, 241, 0.15);
+}
+
+
+.participants-content {
+
+    max-width: 1100px;
+
+    margin: 50px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.participant-box {
+
+    padding: 35px 25px;
+
+    background:
+        rgba(15, 23, 42, 0.8);
+
+    border:
+        1px solid
+        rgba(99, 102, 241, 0.3);
+
+    border-radius: 18px;
+
+    transition: 0.4s;
+}
+
+
+.participant-box:hover {
+
+    transform:
+        translateY(-8px);
+
+    border-color:
+        #a855f7;
+
+    box-shadow:
+        0 0 30px
+        rgba(168, 85, 247, 0.2);
+}
+
+
+.participant-box h3 {
+
+    color: #f8fafc;
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+
+
+.participant-box p {
+
+    color: #94a3b8;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   MOBILE - PRIZES & PARTICIPANTS
+========================================= */
+
+@media (max-width: 768px) {
+
+    .prizes-section,
+    .participants-section {
+
+        padding:
+            70px 20px;
+    }
+
+
+    .prize-cards,
+    .participants-content {
+
+        grid-template-columns: 1fr;
+
+        max-width: 500px;
+    }
+
 }
