@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Submission | Hackathon</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="logo">
+            IIIT TRICHY
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="submission.html" class="active">Submission</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Submission Section -->
+    <main class="submission-page">
+
+        <div class="submission-content">
+
+            <p class="subtitle">PARTICIPATE IN THE EVENT</p>
+
+            <h1>SUBMISSION</h1>
+
+            <p class="submission-description">
+                Submit your hackathon project using the form below.
+                Provide the required details carefully before submitting.
+            </p>
+
+
+            <!-- Submission Form -->
+            <form id="submissionForm">
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Participant Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="team">
+                        Team Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="team"
+                        name="team"
+                        placeholder="Enter your team name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="project">
+                        Project Title
+                    </label>
+
+                    <input
+                        type="text"
+                        id="project"
+                        name="project"
+                        placeholder="Enter your project title"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="description">
+                        Project Description
+                    </label>
+
+                    <textarea
+                        id="description"
+                        name="description"
+                        rows="5"
+                        placeholder="Describe your project..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button type="submit" id="submitButton">
+                SUBMIT PROJECT
+                </button>
+
+                <p id="successMessage"></p>
+
+            </form>
+
+        </div>
+
+    </main>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
